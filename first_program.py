@@ -1,8 +1,15 @@
-s = 'My Name is Julia'
+import pytest
 
-if 'Name' in s:
-    print('Substring found')
+@pytest.mark.xfail(strict='True')
+def test_succeed():
+    assert True
 
-index = s.find('Name')
-if index != -1:
-    print(f'Substring found at index {index}')
+
+@pytest.mark.xfail
+def test_not_succeed():
+    assert False
+
+
+@pytest.mark.skip
+def test_skipped():
+    assert False

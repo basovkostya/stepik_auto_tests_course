@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d70ab753-24a8-4cbc-b996-00533062044b" name="Changes" comment="первый">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_abs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_abs_project.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/unittest_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_fixture10a.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_fixture2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_fixture7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_fixture8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/first_program.py" beforeDir="false" afterPath="$PROJECT_DIR$/first_program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_fixture1.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_fixture1.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +61,14 @@
     "Python tests.Python tests for test_abs_project.TestAbs.test_abs1.executor": "Run",
     "Python tests.Python tests for test_abs_project.TestAbs.test_abs2.executor": "Run",
     "Python tests.Python tests for test_abs_project.TestRegistration.executor": "Run",
+    "Python tests.Python tests for test_fixture1.TestMainPage1.executor": "Run",
+    "Python tests.Python tests for test_fixture1.TestMainPage2.executor": "Run",
+    "Python tests.Python tests in first_program.py.executor": "Run",
     "Python tests.Python tests in test_abs_project.py.executor": "Run",
+    "Python tests.Python tests in test_fixture1.py.executor": "Run",
+    "Python tests.Python tests in test_fixture2.py.executor": "Run",
+    "Python tests.Python tests in test_fixture7.py.executor": "Run",
+    "Python tests.Python tests in test_fixture8.py.executor": "Run",
     "Python tests.Python tests in unittest_test.py.executor": "Run",
     "Python.allert.executor": "Run",
     "Python.dropdown.executor": "Run",
@@ -79,8 +90,8 @@
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
-  <component name="RunManager" selected="Python tests.Python tests in test_abs_project.py">
-    <configuration name="Python tests for test_abs_project.TestAbs.test_abs1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Python tests for test_fixture1.TestMainPage1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="selenium_course" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,11 +102,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_abs_project.TestAbs.test_abs1&quot;" />
+      <option name="_new_target" value="&quot;test_fixture1.TestMainPage1&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_abs_project.TestAbs.test_abs2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_fixture1.TestMainPage2" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="selenium_course" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,22 +117,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_abs_project.TestAbs.test_abs2&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_abs_project.TestRegistration" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="selenium_course" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_abs_project.TestRegistration&quot;" />
+      <option name="_new_target" value="&quot;test_fixture1.TestMainPage2&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -140,7 +136,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests in unittest_test.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests in test_fixture1.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="selenium_course" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -151,17 +147,32 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/unittest_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_fixture1.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_fixture2.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="selenium_course" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_fixture2.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_fixture2.py" />
+        <item itemvalue="Python tests.Python tests in test_fixture1.py" />
+        <item itemvalue="Python tests.Python tests for test_fixture1.TestMainPage2" />
+        <item itemvalue="Python tests.Python tests for test_fixture1.TestMainPage1" />
         <item itemvalue="Python tests.Python tests in test_abs_project.py" />
-        <item itemvalue="Python tests.Python tests in unittest_test.py" />
-        <item itemvalue="Python tests.Python tests for test_abs_project.TestAbs.test_abs2" />
-        <item itemvalue="Python tests.Python tests for test_abs_project.TestRegistration" />
-        <item itemvalue="Python tests.Python tests for test_abs_project.TestAbs.test_abs1" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742915991667</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="первый">
+      <option name="closed" value="true" />
+      <created>1743082638580</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743082638580</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
