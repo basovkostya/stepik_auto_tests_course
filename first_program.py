@@ -1,15 +1,9 @@
-import pytest
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
-@pytest.mark.xfail(strict='True')
-def test_succeed():
-    assert True
-
-
-@pytest.mark.xfail
-def test_not_succeed():
-    assert False
+link = "http://selenium1py.pythonanywhere.com/"
 
 
-@pytest.mark.skip
-def test_skipped():
-    assert False
+def test_guest_should_see_login_link(browser):
+    browser.get(link)
+    browser.find_element(By.CSS_SELECTOR, "#login_link")
